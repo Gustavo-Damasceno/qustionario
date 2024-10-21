@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionário Alimentar - Alunos</title>
+    <style>
+        /* Estilo Geral */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 600px;
+            margin: auto;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 1.8em;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-size: 1.0em;
+            margin-bottom: 10px;
+            display: block;
+            color: #555;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group input[type="radio"] {
+            margin-right: 10px;
+        }
+
+        .form-group input[type="submit"] {
+            width: 100%;
+            padding: 12px;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .form-group input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        @media only screen and (max-width: 600px) {
+            h1 {
+                font-size: 1.5em;
+            }
+
+            .container {
+                padding: 15px;
+            }
+
+            label {
+                font-size: 0.9em;
+            }
+
+            .form-group input[type="submit"] {
+                padding: 10px;
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Questionário Alimentar</h1>
+    <form id="questionarioForm">
+        <!-- Pergunta 1 -->
+        <div class="form-group">
+            <label>1. Quantos anos você tem?</label>
+            <input type="radio" name="idade" value="15 anos ou menos">
+            <label>15 anos ou menos</label><br>
+
+            <input type="radio" name="idade" value="16 anos">
+            <label>16 anos</label><br>
+
+            <input type="radio" name="idade" value="17 anos">
+            <label>17 anos</label><br>
+
+            <input type="radio" name="idade" value="18 anos ou mais">
+            <label>18 anos ou mais</label>
+        </div>
+
+        <!-- Pergunta 2 -->
+        <div class="form-group">
+            <label>2. Quantas refeições você faz por dia (incluindo lanches)?</label>
+            <input type="radio" name="refeicoes" value="1-2">
+            <label>1-2</label><br>
+
+            <input type="radio" name="refeicoes" value="3-4">
+            <label>3-4</label><br>
+
+            <input type="radio" name="refeicoes" value="5-6">
+            <label>5-6</label><br>
+
+            <input type="radio" name="refeicoes" value="Mais de 6">
+            <label>Mais de 6</label>
+        </div>
+
+        <!-- Pergunta 3 -->
+        <div class="form-group">
+            <label>3. Quantas vezes você come no refeitório da escola?</label>
+            <input type="radio" name="refeitorio" value="1 vez">
+            <label>1 vez</label><br>
+
+            <input type="radio" name="refeitorio" value="2-3 vezes">
+            <label>2-3 vezes</label><br>
+
+            <input type="radio" name="refeitorio" value="Nunca">
+            <label>Nunca</label>
+        </div>
+
+        <!-- Pergunta 4 -->
+        <div class="form-group">
+            <label>4. Como você considera a qualidade do alimento no refeitório, para uma boa alimentação?</label>
+            <input type="radio" name="qualidade" value="Muito boa">
+            <label>Muito boa</label><br>
+
+            <input type="radio" name="qualidade" value="Boa">
+            <label>Boa</label><br>
+
+            <input type="radio" name="qualidade" value="Razoável">
+            <label>Razoável</label>
+        </div>
+
+        <!-- Pergunta 5 -->
+        <div class="form-group">
+            <label>5. É mais frequente você almoçar na escola ou em casa?</label>
+            <input type="radio" name="almoco" value="Na escola">
+            <label>Na escola</label><br>
+
+            <input type="radio" name="almoco" value="Em casa">
+            <label>Em casa</label><br>
+
+            <input type="radio" name="almoco" value="Nenhum">
+            <label>Nenhum</label>
+        </div>
+
+        <!-- Pergunta 6 -->
+        <div class="form-group">
+            <label>6. Quantas vezes por semana você come fora de casa (restaurantes, lanchonetes, etc.)?</label>
+            <input type="radio" name="fora" value="Todos os dias">
+            <label>Todos os dias</label><br>
+
+            <input type="radio" name="fora" value="3-5 vezes por semana">
+            <label>3-5 vezes por semana</label><br>
+
+            <input type="radio" name="fora" value="1-2 vezes por semana">
+            <label>1-2 vezes por semana</label>
+        </div>
+
+        <!-- Pergunta 7 -->
+        <div class="form-group">
+            <label>7. Com que frequência você consome alimentos fritos ou fast food?</label>
+            <input type="radio" name="frituras" value="Todos os dias">
+            <label>Todos os dias</label><br>
+
+            <input type="radio" name="frituras" value="3-5 vezes por semana">
+            <label>3-5 vezes por semana</label><br>
+
+            <input type="radio" name="frituras" value="1-2 vezes por semana">
+            <label>1-2 vezes por semana</label><br>
+
+            <input type="radio" name="frituras" value="Raramente ou nunca">
+            <label>Raramente ou nunca</label>
+        </div>
+
+        <!-- Pergunta 8 -->
+        <div class="form-group">
+            <label>8. É costume seu comer em restaurantes de fast food?</label>
+            <input type="radio" name="costume-fastfood" value="Frequentemente">
+            <label>Frequentemente</label><br>
+
+            <input type="radio" name="costume-fastfood" value="Nunca">
+            <label>Nunca</label><br>
+
+            <input type="radio" name="costume-fastfood" value="Raramente">
+            <label>Raramente</label>
+        </div>
+
+        <!-- Pergunta 9 -->
+        <div class="form-group">
+            <label>9. Você costuma lanchar entre as refeições principais?</label>
+            <input type="radio" name="lanchar" value="Sim, frequentemente">
+            <label>Sim, frequentemente</label><br>
+
+            <input type="radio" name="lanchar" value="Raramente">
+            <label>Raramente</label><br>
+
+            <input type="radio" name="lanchar" value="Não">
+            <label>Não</label>
+        </div>
+
+        <!-- Pergunta 10 -->
+        <div class="form-group">
+            <label>10. Você costuma levar lanches de casa para a escola?</label>
+            <input type="radio" name="lanches-casa" value="Sim">
+            <label>Sim</label><br>
+
+            <input type="radio" name="lanches-casa" value="Não">
+            <label>Não</label>
+        </div>
+
+        <!-- Pergunta 11 -->
+        <div class="form-group">
+            <label>11. Você consome bebidas açucaradas (refrigerantes, sucos industrializados) frequentemente?</label>
+            <input type="radio" name="bebidas" value="Sim">
+            <label>Sim</label><br>
+
+            <input type="radio" name="bebidas" value="Não">
+            <label>Não</label>
+        </div>
+
+        <!-- Pergunta 12 -->
+        <div class="form-group">
+            <label>12. Sua alimentação afeta seu desempenho escolar?</label>
+            <input type="radio" name="desempenho" value="Sim, positivamente">
+            <label>Sim, positivamente</label><br>
+
+            <input type="radio" name="desempenho" value="Sim, negativamente">
+            <label>Sim, negativamente</label><br>
+
+            <input type="radio" name="desempenho" value="Não afeta">
+            <label>Não afeta</label>
+        </div>
+
+        <!-- Botão de Envio -->
+        <div class="form-group">
+            <input type="submit" value="Enviar Respostas">
+        </div>
+    </form>
+</div>
+
+<script>
+    document.getElementById('questionarioForm').addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        var formData = new FormData(this);
+        var bodyContent = "";
+
+        formData.forEach(function (value, key) {
+            bodyContent += key + ": " + value + "\\n";
+        });
+
+        var whatsappNumber = "+5543998025852";  // Número de WhatsApp com código do país
+        var whatsappMessage = "Respostas%20do%20Questionário%20Alimentar:%0A" + encodeURIComponent(bodyContent);
+
+        // Redireciona para o WhatsApp com a mensagem pré-preenchida
+        window.open("https://api.whatsapp.com/send?phone=" + whatsappNumber + "&text=" + whatsappMessage, "_blank");
+    });
+</script>
+
+</body>
+</html>
